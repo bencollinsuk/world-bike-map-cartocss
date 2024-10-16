@@ -114,7 +114,7 @@ A regular style.
                 "Noto Sans Sundanese Regular",
                 "Noto Sans Symbols Regular",
                 "Noto Sans Symbols2 Regular",
-                "Noto Sans Syriac Eastern Regular",
+                "Noto Sans Syriac Regular",
                 "Noto Sans Tagalog Regular",
                 "Noto Sans Tagbanwa Regular",
                 "Noto Sans Tai Le Regular",
@@ -124,7 +124,6 @@ A regular style.
                 "Noto Sans Telugu UI Regular",
                 "Noto Sans Thaana Regular",
                 "Noto Sans Thai UI Regular",
-                "Noto Sans Tibetan Regular",
                 "Noto Sans Tifinagh Regular",
                 "Noto Sans Vai Regular",
                 "Noto Sans Yi Regular",
@@ -133,14 +132,13 @@ A regular style.
                 "Noto Naskh Arabic UI Regular",
 
                 "Noto Serif Tibetan Regular",
-                "Noto Sans Tibetan Regular",
 
                 "Noto Emoji Regular",
 
                 "DejaVu Sans Book",
 
                 "HanaMinA Regular", "HanaMinB Regular",
-                "Unifont Medium", "unifont Medium", "Unifont Upper Medium";
+                "Unifont Upper Medium", "Unifont Upper Medium", "Unifont Upper Medium";
 
 /*
 A bold style is available for almost all scripts. Bold text is heavier than
@@ -173,7 +171,7 @@ regular text and can be used for emphasis. Fallback is a regular style.
 
                 "Noto Sans Arabic UI Bold", "Noto Naskh Arabic UI Bold",
 
-                "Noto Serif Tibetan Bold", "Noto Sans Tibetan Bold",
+                "Noto Serif Tibetan Bold", 
 
                 "DejaVu Sans Bold",
 
