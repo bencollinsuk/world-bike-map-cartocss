@@ -631,7 +631,7 @@
 
   text-fill: darken(@icn-overlay, 25%);
   [route='bicycle'][type='ncn'] {
-    text-fill: darken(@ncn-overlay, 25%);
+    text-fill: darken(@ncn-overlay, 50%);
   }
   [route='bicycle'][type='rcn'] {
     text-fill: darken(@rcn-overlay, 25%);

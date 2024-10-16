@@ -3708,7 +3708,6 @@
       line-dasharray: 1,1,1,8;
     }
     [mtb_scale>=2] {
-      line-color: #FF0000;
     }
     [mtb_scale>=3] {
       line-color: #000000; //one dash |
@@ -3884,12 +3883,12 @@
     line-color: @mtb-overlay;
   }
 
-  line-width: 1;
+  line-width: 2;
 }
 #bicycle_routes_gen1[zoom >= 5] {
   opacity: 0.75;
   line-color: @icn-overlay;
-  line-width: 1;
+  line-width: 4;
 
   [type='ncn'] {
     line-color: @ncn-overlay;
@@ -3905,7 +3904,7 @@
   }
 }
 #bicycle_routes_gen2[zoom >= 8] {
-  opacity: 0.6;
+  opacity: 1.0;
   line-color: @icn-overlay;
   [type='ncn'] {
     line-color: @ncn-overlay;
@@ -3921,13 +3920,14 @@
     line-dasharray: 6,6;
   }
 
-  line-width: 1;
-  [zoom >= 9] { line-width: 1.5; }
-  [zoom >= 10] { line-width: 2; }
+  line-width: 2;
+  [zoom >= 9] { line-width: 3; }
+  [zoom >= 10] { line-width: 4; }
+  [zoom >= 11] { line-width: 6; }
 }
 
 #bicycle_routes_bicycle_gen3[zoom >= 11] {
-  opacity: 0.25;
+  opacity: 0.75;
   line-color: @lcn-overlay;
   [type='icn'] {
     line-color: @icn-overlay;
@@ -3943,12 +3943,12 @@
     line-dasharray: 6,6;
   }
 
-  line-width: 3;
+  line-width: 5;
   [zoom >= 12] {
-    line-width: 4;
+    line-width: 6;
   }
   [zoom >= 14] {
-    line-width: 5;
+    line-width: 8;
   }
   [zoom >= 15] {
     line-width: 6;

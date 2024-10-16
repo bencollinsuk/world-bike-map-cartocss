@@ -30,37 +30,37 @@
 /* ================================================================== */
 
 /* The lighten() calls below compensate for the extra opacity from the hillshades. */
-@land:              #eee5dc;
-@grass:             #c2debd;
-@meadow:            #e2eecb;
-@park:              #c2debd;
+@land:              #3b513a;
+@grass:             #859553;
+@meadow:            #949451;
+@park:              #859553;
 @cemetery:          #D6DED2;
-@wooded:            #95bd84;
-@heath:             #b2c068;
+@wooded:            #516e52;
+@heath:             #475736;
 @scrub:             #c8d7ab;
-@farmland:          #fbf0e3;
-@water:             #8ecbeb;
+@farmland:          #3e593c;
+@water:             #365463;
 @glacier:           #ddecec;
 @religious:         #ded4b2;
 @military:          #f55;
-@quarry:            #c5c3c3;
-@sand:              #f5e9c6;
-@bare_ground:       #eee5dc;
+@quarry:            #4a4949;
+@sand:              #d1b28e;
+@bare_ground:       #878582;
 @hedge:             #add19e;
 
 @nature_reserve:    #05620e;
 
-@building:          #e4dfdb;
-@hospital:          #e0e0e0;
-@school:            #e0e0e0;
-@sports:            #e0e0e0;
+@building:          #919aa4;
+@hospital:          #adadad;
+@school:            #adadad;
+@sports:            #adadad;
 @stadium:           @land * 0.97;
 @pitch:             @park * 0.97;
 @track:             @park * 0.96;
 @bicycle-leisure-track-fill: #bbaeb8;
 
 @residential:       @land * 1.05;
-@commercial:        #ded8dd;
+@commercial:        #919191;
 @industrial:        @land * 0.96;
 @parking:           #EEE;
 
@@ -143,7 +143,7 @@
 @contours-small-min-path-length: 200;
 @contours-min-path-length: 300;
 @contours-max-char-angle-delta: 10;
-@contours-fill: #ffa970;
+@contours-fill: #999999;
 @contours-stroke: #c45700;
 
 /* ================================================================== */
