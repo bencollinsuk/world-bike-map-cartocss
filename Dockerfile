@@ -5,18 +5,18 @@ RUN apt-get update && \
     apt-get install --no-install-recommends -y \
     ca-certificates \
     curl \
-    gnupg \
-    postgresql-client \
-    python \
     fonts-hanazono \
     fonts-noto-cjk \
     fonts-noto-hinted \
     fonts-noto-unhinted \
     gnupg \
+    gnupg \
     mapnik-utils \
     nodejs \
     npm \
     postgresql-client \
+    postgresql-client \
+    python \
     python \
     ttf-unifont \
     unzip && \
