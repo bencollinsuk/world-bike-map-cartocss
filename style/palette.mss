@@ -37,7 +37,7 @@
 @cemetery:          #D6DED2;
 @wooded:            #516e52;
 @heath:             #475736;
-@scrub:             #c8d7ab;
+@scrub:             #6c6e51;
 @farmland:          #3e593c;
 @water:             #365463;
 @glacier:           #ddecec;
@@ -50,7 +50,7 @@
 
 @nature_reserve:    #05620e;
 
-@building:          #919aa4;
+@building:          #636d84;
 @hospital:          #adadad;
 @school:            #adadad;
 @sports:            #adadad;
@@ -76,18 +76,18 @@
 
 /* We set up a default halo color for places so you can edit them all
    at once or override each individually. */
-@place_halo:        fadeout(#fff,34%);
+@place_halo:        fadeout(#000,34%);
 
-@country_text:      #222;
+@country_text:      #fff;
 @country_halo:      @place_halo;
 
-@state_text:        #222;
+@state_text:        #fff;
 @state_halo:        @place_halo;
 
-@city_text:         #222;
+@city_text:         #fff;
 @city_halo:         @place_halo;
 
-@town_text:         #222;
+@town_text:         #fff;
 @town_halo:         @place_halo;
 
 @poi_text:          #666;
@@ -110,11 +110,11 @@
 @village_text:      #444;
 @village_halo:      @place_halo;
 
-@placenames: #111;
+@placenames: #fff;
 @placenames-light: #444;
 
-@standard-halo-radius: 1;
-@standard-halo-fill: rgba(255,255,255,0.6);
+@standard-halo-radius:0.8;
+@standard-halo-fill: rgba(255,255,255,1);
 @standard-font-size: 10;
 @standard-wrap-width: 30;
 @standard-line-spacing-size: -1.5;
