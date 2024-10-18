@@ -24,6 +24,8 @@ services:
     environment:
       - PG_WORK_MEM
       - PG_MAINTENANCE_WORK_MEM
+    volumes:
+      - kosmtik-osm-data:/data/database/
   import:
     image: import:v1
     build:
@@ -41,3 +43,7 @@ services:
       - OSM2PGSQL_CACHE
       - OSM2PGSQL_NUMPROC
       - OSM2PGSQL_DATAFILE
+
+volumes:
+  kosmtik-osm-data:
+    external: true
