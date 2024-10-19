@@ -19,18 +19,28 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.db
+    deploy:
+      resources:
+        reservations:
+          cpus: '8'
+          memory: 6G
     ports:
       - "127.0.0.1:5432:5432"
     environment:
       - PG_WORK_MEM
       - PG_MAINTENANCE_WORK_MEM
     volumes:
-      - kosmtik-osm-data:/data/database/
+      - kosmtik-osm-data:/var/lib/postgresql/data
   import:
     image: import:v1
     build:
       context: .
       dockerfile: Dockerfile.import
+    deploy:
+      resources:
+        reservations:
+          cpus: '8'
+          memory: 6G
     volumes:
       - .:/cyclosm
     depends_on:
@@ -40,8 +50,8 @@ services:
       - PGUSER=postgres
       - PG_WORK_MEM
       - PG_MAINTENANCE_WORK_MEM
-      - OSM2PGSQL_CACHE
-      - OSM2PGSQL_NUMPROC
+      - CACHE=8000
+      - THREADS=10
       - OSM2PGSQL_DATAFILE
 
 volumes:
