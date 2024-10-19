@@ -3923,6 +3923,7 @@
   [type='icn'] {
     [zoom >= 8] { line-width: 3; }
     [zoom >= 9] { line-width: 4; }
+    [zoom >= 10] { line-width: 4.5; }
   }
 
   line-width: 1.5;
