@@ -29,20 +29,22 @@ import)
 # Environment settings for importing to a Docker container database
 PG_WORK_MEM=${PG_WORK_MEM:-16MB}
 PG_MAINTENANCE_WORK_MEM=${PG_MAINTENANCE_WORK_MEM:-256MB}
-OSM2PGSQL_CACHE=${OSM2PGSQL_CACHE:-512}
-OSM2PGSQL_NUMPROC=${OSM2PGSQL_NUMPROC:-1}
+CACHE=${CACHE:-4096}
+THREADS=${THREADS:-8}
 OSM2PGSQL_DATAFILE=${OSM2PGSQL_DATAFILE:-data.osm.pbf}
 EOF
     chmod a+rw .env
-    export OSM2PGSQL_CACHE=${OSM2PGSQL_CACHE:-512}
-    export OSM2PGSQL_NUMPROC=${OSM2PGSQL_NUMPROC:-1}
+    export CACHE=${CACHE:-4096}
+    export THREADS=${THREADS:-8}
     export OSM2PGSQL_DATAFILE=${OSM2PGSQL_DATAFILE:-data.osm.pbf}
   fi
 
+  echo "Importing data to a database: $OSM2PGSQL_DATAFILE using $CACHE cache and $THREADS threads"
+
   # Importing data to a database
   osm2pgsql \
-  --cache $OSM2PGSQL_CACHE \
-  --number-processes $OSM2PGSQL_NUMPROC \
+  --cache $CACHE \
+  --number-processes $THREADS \
   --hstore \
   --database $DB_NAME \
   --slim \
