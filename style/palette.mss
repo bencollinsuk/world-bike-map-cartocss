@@ -31,11 +31,11 @@
 
 /* The lighten() calls below compensate for the extra opacity from the hillshades. */
 @land:              #3b513a;
-@grass:             #859553;
-@meadow:            #949451;
+@grass:             #64703f;
+@meadow:            #647a4c;
 @park:              #859553;
-@cemetery:          #D6DED2;
-@wooded:            #516e52;
+@cemetery:          #6a8a66;
+@wooded:            #556e51;
 @heath:             #475736;
 @scrub:             #6c6e51;
 @farmland:          #3e593c;

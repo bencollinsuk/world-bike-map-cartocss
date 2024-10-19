@@ -144,13 +144,14 @@
   [highway = 'secondary'][zoom >= 12] {
     text-name: "[refs]";
     text-size: 7;
-    text-fill: @road_text;
+    text-fill: #666;
     text-spacing: 600;
     text-clip: false;
     text-placement: line;
     text-face-name: @sans;
     text-repeat-distance: @major-highway-text-repeat-distance;
     text-halo-radius: @standard-halo-radius;
+    text-halo-fill: #333;
   }
 }
 

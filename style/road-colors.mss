@@ -56,7 +56,7 @@
 @bridge_case: #666;
 @bridge_path_case: @land;
 
-@aeroway: #ddd;
+@aeroway: #919191;
 
 @surfaceDarker1: 10%;
 @surfaceLighter1: 20%;
