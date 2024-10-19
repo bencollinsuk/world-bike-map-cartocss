@@ -3920,7 +3920,12 @@
     line-dasharray: 6,6;
   }
 
-  line-width: 2;
+  [type='icn'] {
+    [zoom >= 8] { line-width: 3; }
+    [zoom >= 9] { line-width: 4; }
+  }
+
+  line-width: 1.5;
   [zoom >= 9] { line-width: 2; }
   [zoom >= 10] { line-width: 2; }
 }
@@ -3940,6 +3945,10 @@
 
   [state='proposed'] {
     line-dasharray: 6,6;
+  }
+
+  [type='icn'] {
+    [zoom >= 11] { line-width: 5; }
   }
 
   line-width: 2.5;

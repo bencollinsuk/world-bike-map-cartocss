@@ -23,11 +23,11 @@
   [zoom=17][area>5000]   [area<100000],
   [zoom>=18]             [area<25000] {
     text-name: "[name]";
-    text-halo-radius: 1.5;
+    text-halo-radius: @standard-halo-radius;
     text-face-name:@sans;
     text-size: 11;
     text-wrap-width: 30;
-    text-fill: #888;
+    text-fill: #fff;
     text-halo-fill: @standard-halo-fill;
     text-placement: interior;
 
@@ -38,8 +38,8 @@
     [type='common'],
     [type='park'] {
       text-face-name: @sans_italic;
-      text-fill: @park * 0.6;
-      text-halo-fill: lighten(@park, 10%);
+      text-fill: #fff;
+      text-halo-fill: #000;
     }
     [type='golf_course'] {
       text-fill: @grass * 0.6;
@@ -50,16 +50,16 @@
       text-halo-fill: lighten(@cemetery, 10%);
     }
     [type='university'] {
-      text-fill: @school * 0.6;
-      text-halo-fill: lighten(@school, 10%);
+      text-fill: #fff;
+      text-halo-fill: @standard-halo-fill;
     }
     [type='basin'],
     [type='water'] {
-      text-fill: @water * 0.6;
+      text-fill: #fff * 0.6;
       text-halo-fill: lighten(@water, 10%);
     }
     [type='marina'] {
-      text-fill: @water * 0.5;
+      text-fill: #fff * 0.5;
       text-halo-fill: lighten(@water, 10%);
       text-face-name: @sans_italic;
     }
@@ -68,7 +68,7 @@
     [type='protected_area'],
     [type='nature_reserve'] {
       text-face-name: @sans_italic;
-      text-fill: @nature_reserve;
+      text-fill: #fff;
     }
     [type='military'] {
       text-fill: @military * 0.6;
@@ -116,7 +116,7 @@
 #waterway_label[type='stream'][zoom>=17] {
   text-name: '[name]';
   text-face-name: @sans_italic;
-  text-fill: @water * 0.75;
+  text-fill: #fff * 0.75;
   text-halo-fill: fadeout(lighten(@water,5%),25%);
   text-halo-radius: 1;
   text-placement: line;
@@ -397,7 +397,7 @@
   [highway = 'track'] {
     [zoom >= 16] {
       text-name: "[name]";
-      text-fill: #222;
+      text-fill: #fff;
       text-size: 9;
       text-halo-radius: @standard-halo-radius;
       text-halo-fill: @road_halo;
@@ -422,7 +422,7 @@
   [highway = 'steps'] {
     [zoom >= 16] {
       text-name: "[name]";
-      text-fill: #222;
+      text-fill: #fff;
       text-size: 9;
       text-halo-radius: @standard-halo-radius;
       text-halo-fill: @road_halo;
@@ -629,15 +629,15 @@
   text-repeat-distance: 900;
   text-name: "[name]";
 
-  text-fill: darken(@icn-overlay, 25%);
+  text-fill: #fff;
   [route='bicycle'][type='ncn'] {
-    text-fill: darken(@ncn-overlay, 50%);
+    text-fill: #fff;
   }
   [route='bicycle'][type='rcn'] {
-    text-fill: darken(@rcn-overlay, 25%);
+    text-fill: #fff;
   }
   [route='bicycle'][type='lcn'] {
-    text-fill: darken(@lcn-overlay, 25%);
+    text-fill: #fff;
   }
   [route='mtb'] {
     text-fill: darken(@mtb-overlay, 25%);

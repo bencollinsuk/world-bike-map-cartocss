@@ -22,7 +22,7 @@
 
       [zoom >= 17] {
         text-name: "[name]";
-        text-fill: #666666;
+        text-fill: #fff;
         text-size: 10;
         text-dy: 4;
         text-spacing: 900;

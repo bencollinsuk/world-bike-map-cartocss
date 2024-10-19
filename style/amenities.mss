@@ -1411,7 +1411,7 @@
     text-halo-fill: @standard-halo-fill;
     text-line-spacing: @standard-line-spacing-size;
     text-face-name: @standard-font;
-    text-fill: @health-color;
+    text-fill: #fff;
     text-placement-type: simple;
     text-placements: "S,N,E,W,NE,SE,NW,SW,16,14,12";
     text-dy: 12;
@@ -1423,7 +1423,7 @@
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
-    text-fill: #000033;
+    text-fill: #fff;
     text-dy: 12;
     text-face-name: @standard-font;
     text-halo-radius: @standard-halo-radius;
@@ -1507,7 +1507,7 @@
     [feature = 'tourism_viewpoint'] { text-dy: 12; }
     [feature = 'amenity_community_centre'] { text-dy: 11; text-fill: darken(@amenity-common, 5%); }
     text-face-name: @standard-font;
-    text-halo-radius: 1.4;
+    text-halo-radius: @standard-halo-radius;
     text-halo-fill: @standard-halo-fill;
     text-placement: interior;
   }
@@ -1549,7 +1549,7 @@
     }
     text-face-name: @sans_italic;
     text-halo-radius: @standard-halo-radius;
-    text-halo-fill: @place_halo;
+    text-halo-fill: #fff;
   }
 }
 

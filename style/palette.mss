@@ -52,7 +52,7 @@
 
 @building:          #636d84;
 @hospital:          #adadad;
-@school:            #adadad;
+@school:            #4e5669;
 @sports:            #adadad;
 @stadium:           @land * 0.97;
 @pitch:             @park * 0.97;
@@ -60,7 +60,7 @@
 @bicycle-leisure-track-fill: #bbaeb8;
 
 @residential:       @land * 1.05;
-@commercial:        #919191;
+@commercial:        #787878;
 @industrial:        @land * 0.96;
 @parking:           #EEE;
 
@@ -76,7 +76,7 @@
 
 /* We set up a default halo color for places so you can edit them all
    at once or override each individually. */
-@place_halo:        fadeout(#000,34%);
+@place_halo:        #000;
 
 @country_text:      #fff;
 @country_halo:      @place_halo;
@@ -92,13 +92,13 @@
 
 @poi_text:          #666;
 
-@road_text:         #222;
-@road_halo:         #fff;
+@road_text:         #fff;
+@road_halo:         #000;
 
 @other_text:        #666;
 @other_halo:        @place_halo;
 
-@locality_text:     #aaa;
+@locality_text:     #fff;
 @locality_halo:     @land;
 
 @ferry-route: #66f;
@@ -111,10 +111,10 @@
 @village_halo:      @place_halo;
 
 @placenames: #fff;
-@placenames-light: #444;
+@placenames-light: #fff;
 
 @standard-halo-radius:0.8;
-@standard-halo-fill: rgba(255,255,255,1);
+@standard-halo-fill: rgba(0,0,0,0.8);
 @standard-font-size: 10;
 @standard-wrap-width: 30;
 @standard-line-spacing-size: -1.5;
@@ -160,7 +160,7 @@
 
 @bicycle-amenity: #ac39ac;
 @bicycle-rental: #006ac3;
-@marina-text: #576ddf;
+@marina-text: #fff;
 @nobike-transportation-icon: #444444;
 @transportation-icon: #0092da;
 @transportation-text: #0066ff;
