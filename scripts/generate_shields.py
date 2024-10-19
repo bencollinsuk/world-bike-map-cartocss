@@ -29,6 +29,7 @@ def load_settings():
 
 def main():
     settings = load_settings()
+    print('Generating shields...')
 
     namespace = 'http://www.w3.org/2000/svg'
     svgns = '{' + namespace + '}'
