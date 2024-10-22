@@ -30,7 +30,7 @@ _parts:
   osm2pgsql: &osm2pgsql
     type: "postgis"
     dbname: "gis"
-    host: postgres-service-blue
+    host: database_host
     port: 5432
     user: renderer
     password: renderer
