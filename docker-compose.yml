@@ -15,7 +15,7 @@ services:
       - PGHOST=db
       - PGUSER=postgres
   db:
-    image: db:v1
+    image: world-bike-map-tile-server-db
     build:
       context: .
       dockerfile: Dockerfile.db
@@ -25,14 +25,17 @@ services:
           cpus: '8'
           memory: 6G
     ports:
-      - "127.0.0.1:5432:5432"
+      - "5432:5432"
     environment:
       - PG_WORK_MEM
       - PG_MAINTENANCE_WORK_MEM
+      - THREADS=4
+      - OSM2PGSQL_EXTRA_ARGS=-C 8192
+      - PGPASSWORD=renderer
     volumes:
-      - kosmtik-osm-data:/var/lib/postgresql/data
+      - osm-data:/var/lib/postgresql/data
   import:
-    image: import:v1
+    image: world-bike-map-tile-server-import
     build:
       context: .
       dockerfile: Dockerfile.import
@@ -55,5 +58,5 @@ services:
       - OSM2PGSQL_DATAFILE
 
 volumes:
-  kosmtik-osm-data:
+  osm-data:
     external: true
