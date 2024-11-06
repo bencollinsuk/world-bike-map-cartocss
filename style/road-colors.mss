@@ -32,14 +32,14 @@
 @ncn-overlay: #fe7f00;
 @ncn-shield-fill: #000000;
 @primary-case: #666;
-@primary-fill: #4d4d4d;
+@primary-fill: #787878;
 @rail-line: #fff;
 @rcn-overlay: #f5fe00;
 @rcn-shield-fill: #000000;
 @secondary-case: #666;
 @secondary-fill: #666666;
 @standard-case: #888;
-@standard-fill: #444;
+@standard-fill: #787878;
 @standard-nobicycle: #787878;
 @tertiary-case: #777;
 @pedestrian-case: #bbb;
