@@ -62,7 +62,7 @@
 @residential:       @land * 1.05;
 @commercial:        #787878;
 @industrial:        @land * 0.96;
-@parking:           #EEE;
+@parking:           #808080;
 
 @power-line: #888;
 
@@ -115,7 +115,7 @@
 
 @standard-halo-radius:0.8;
 @standard-halo-fill: rgba(0,0,0,0.8);
-@standard-font-size: 10;
+@standard-font-size: 20;
 @standard-wrap-width: 30;
 @standard-line-spacing-size: -1.5;
 

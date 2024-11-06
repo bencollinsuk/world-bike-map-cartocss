@@ -8,7 +8,7 @@
 
 #legend-icons::text {
     text-name: "[label]";
-    text-size: 13;
+    text-size: @standard-font-size + 3;
     text-face-name: @sans_bold;
     text-halo-radius: @standard-halo-radius;
     text-halo-fill: @standard-halo-fill;
@@ -18,7 +18,7 @@
 
 #legend-labels {
     text-name: "[label]";
-    text-size: 13;
+    text-size: @standard-font-size + 3;
     text-face-name: @sans_bold;
     text-halo-radius: @standard-halo-radius;
     text-halo-fill: @standard-halo-fill;

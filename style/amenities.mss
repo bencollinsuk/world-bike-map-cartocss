@@ -1450,7 +1450,7 @@
 		text-size: @standard-font-size;
 		text-wrap-width: @standard-wrap-width;
 		text-line-spacing: @standard-line-spacing-size;
-		text-fill: @culture;
+		text-fill: #fff;
 		text-dy: 11;
 		text-face-name: @standard-font;
 		text-halo-radius: @standard-halo-radius;
@@ -1534,16 +1534,16 @@
   [feature = 'place_islet'][zoom >= 17] {
     text-name: "[name]";
     text-fill: @placenames;
-    text-size: 10;
+    text-size: @standard-font-size;
     text-wrap-width: 30;
     text-line-spacing: -1.5;
     [way_pixels > 12000] {
-      text-size: 11;
+      text-size: @standard-font-size + 1;
       text-wrap-width: 36;
       text-line-spacing: -1.8;
     }
     [way_pixels > 48000] {
-      text-size: 13;
+      text-size: @standard-font-size + 3;
       text-wrap-width: 45;
       text-line-spacing: -2.25;
     }

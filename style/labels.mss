@@ -25,7 +25,7 @@
     text-name: "[name]";
     text-halo-radius: @standard-halo-radius;
     text-face-name:@sans;
-    text-size: 11;
+    text-size: @standard-font-size + 1;
     text-wrap-width: 30;
     text-fill: #fff;
     text-halo-fill: @standard-halo-fill;
@@ -75,7 +75,7 @@
       text-face-name: @sans_italic;
     }
     [type='retail'] {
-      text-fill: @shop-text;
+      text-fill: #fff;
       text-face-name: @sans_italic;
     }
 
@@ -85,7 +85,7 @@
     [zoom=17][area>20000],
     [zoom=18][area>5000] {
         text-name: "[name]";
-        text-size: 13;
+        text-size: @standard-font-size + 3;
         text-wrap-width: 60;
         text-character-spacing: 1;
         text-halo-radius: 2;
@@ -93,13 +93,13 @@
     [zoom=16][area>1600000],
     [zoom=17][area>80000],
     [zoom=18][area>20000] {
-        text-size: 15;
+        text-size: @standard-font-size + 5;
         text-character-spacing: 2;
         text-wrap-width: 120;
     }
     [zoom>=17][area>1600000],
     [zoom>=18][area>80000] {
-        text-size: 20;
+        text-size: @standard-font-size + 10;
         text-character-spacing: 3;
         text-wrap-width: 180;
     }
@@ -121,14 +121,14 @@
   text-halo-radius: 1;
   text-placement: line;
   text-min-distance: 400;
-  text-size: 10;
+  text-size: @standard-font-size;
   [type='river'][zoom=15],
   [type='canal'][zoom=17] {
-    text-size: 11;
+    text-size: @standard-font-size + 1;
   }
   [type='river'][zoom>=16],
   [type='canal'][zoom=18] {
-    text-size: 14;
+    text-size: @standard-font-size + 4;
     text-spacing: 300;
   }
 }
@@ -143,7 +143,7 @@
   [highway = 'primary'][zoom >= 11],
   [highway = 'secondary'][zoom >= 12] {
     text-name: "[refs]";
-    text-size: 7;
+    text-size: @standard-font-size + 7;
     text-fill: #666;
     text-spacing: 600;
     text-clip: false;
@@ -163,7 +163,7 @@
   [highway = 'tertiary'] {
     [zoom >= 13] {
       text-name: "[refs]";
-      text-size: 8;
+      text-size: @standard-font-size + 8;
       text-fill: @road_text;
       text-spacing: 300;
       text-clip: false;
@@ -174,16 +174,16 @@
       text-repeat-distance: @major-highway-text-repeat-distance;
     }
     [zoom >= 14] {
-      text-size: 9;
+      text-size: @standard-font-size + 9;
     }
     [zoom >= 15] {
-      text-size: 10;
+      text-size: @standard-font-size;
     }
     [zoom >= 17] {
-      text-size: 11;
+      text-size: @standard-font-size + 1;
     }
     [zoom >= 19] {
-      text-size: 12;
+      text-size: @standard-font-size + 2;
     }
   }
 
@@ -193,7 +193,7 @@
   [highway = 'road'] {
     [zoom >= 16] {
       text-name: "[refs]";
-      text-size: 9;
+      text-size: @standard-font-size + 9;
       text-fill: @road_text;
       text-spacing: 300;
       text-clip: false;
@@ -204,11 +204,11 @@
       text-repeat-distance: @minor-highway-text-repeat-distance;
     }
     [zoom >= 17] {
-      text-size: 11;
+      text-size: @standard-font-size + 1;
       text-spacing: 400;
     }
     [zoom >= 19] {
-      text-size: 12;
+      text-size: @standard-font-size + 2;
       text-spacing: 400;
     }
   }
@@ -217,7 +217,7 @@
   [highway = 'pedestrian'] {
     [zoom >= 16] {
       text-name: "[refs]";
-      text-size: 9;
+      text-size: @standard-font-size + 9;
       text-fill: @road_text;
       text-spacing: 300;
       text-clip: false;
@@ -228,10 +228,10 @@
       text-repeat-distance: @minor-highway-text-repeat-distance;
     }
     [zoom >= 17] {
-      text-size: 11;
+      text-size: @standard-font-size + 1;
     }
     [zoom >= 19] {
-      text-size: 12;
+      text-size: @standard-font-size + 2;
     }
   }
 }
@@ -242,7 +242,7 @@
   [highway = 'primary'] {
     [zoom >= 13] {
       text-name: "[name]";
-      text-size: 8;
+      text-size: @standard-font-size + 8;
       text-fill: @road_text;
       text-spacing: 300;
       text-clip: false;
@@ -255,22 +255,22 @@
       }
     }
     [zoom >= 14] {
-      text-size: 9;
+      text-size: @standard-font-size + 9;
     }
     [zoom >= 15] {
-      text-size: 10;
+      text-size: @standard-font-size;
     }
     [zoom >= 17] {
-      text-size: 11;
+      text-size: @standard-font-size + 1;
     }
     [zoom >= 19] {
-      text-size: 12;
+      text-size: @standard-font-size + 2;
     }
   }
   [highway = 'secondary'] {
     [zoom >= 14] {
       text-name: "[name]";
-      text-size: 9;
+      text-size: @standard-font-size + 9;
       text-fill: @road_text;
       text-spacing: 300;
       text-clip: false;
@@ -281,19 +281,19 @@
       text-repeat-distance: @major-highway-text-repeat-distance;
     }
     [zoom >= 15] {
-      text-size: 10;
+      text-size: @standard-font-size;
     }
     [zoom >= 17] {
-      text-size: 11;
+      text-size: @standard-font-size + 1;
     }
     [zoom >= 19] {
-      text-size: 12;
+      text-size: @standard-font-size + 2;
     }
   }
   [highway = 'tertiary'] {
     [zoom >= 14] {
       text-name: "[name]";
-      text-size: 9;
+      text-size: @standard-font-size + 9;
       text-fill: @road_text;
       text-spacing: 300;
       text-clip: false;
@@ -304,10 +304,10 @@
       text-repeat-distance: @major-highway-text-repeat-distance;
     }
     [zoom >= 17] {
-      text-size: 11;
+      text-size: @standard-font-size + 1;
     }
     [zoom >= 19] {
-      text-size: 12;
+      text-size: @standard-font-size + 2;
     }
   }
   [highway = 'residential'],
@@ -315,7 +315,7 @@
   [highway = 'road'] {
     [zoom >= 16] {
       text-name: "[name]";
-      text-size: 9;
+      text-size: @standard-font-size + 9;
       text-fill: @road_text;
       text-spacing: 300;
       text-clip: false;
@@ -327,11 +327,11 @@
       [highway = 'unclassified'] { text-repeat-distance: @major-highway-text-repeat-distance;}
     }
     [zoom >= 17] {
-      text-size: 11;
+      text-size: @standard-font-size + 1;
       text-spacing: 400;
     }
     [zoom >= 19] {
-      text-size: 12;
+      text-size: @standard-font-size + 2;
       text-spacing: 400;
     }
   }
@@ -339,7 +339,7 @@
   [highway = 'service'] {
     [zoom >= 16] {
       text-name: "[name]";
-      text-size: 9;
+      text-size: @standard-font-size + 9;
       text-fill: @road_text;
       text-spacing: 300;
       text-clip: false;
@@ -351,7 +351,7 @@
       text-repeat-distance: @major-highway-text-repeat-distance;
     }
     [zoom >= 17] {
-      text-size: 11;
+      text-size: @standard-font-size + 1;
     }
   }
 
@@ -359,7 +359,7 @@
   [highway = 'pedestrian'] {
     [zoom >= 16] {
       text-name: "[name]";
-      text-size: 9;
+      text-size: @standard-font-size + 9;
       text-fill: @road_text;
       text-spacing: 300;
       text-clip: false;
@@ -370,10 +370,10 @@
       text-repeat-distance: @minor-highway-text-repeat-distance;
     }
     [zoom >= 17] {
-      text-size: 11;
+      text-size: @standard-font-size + 1;
     }
     [zoom >= 19] {
-      text-size: 12;
+      text-size: @standard-font-size + 2;
     }
   }
 }
@@ -381,7 +381,7 @@
 
 #roads-text-conditional[zoom >= 20] {
   text-fill: @conditional-text;
-  text-size: 9;
+  text-size: @standard-font-size + 9;
   text-halo-radius: @standard-halo-radius;
   text-halo-fill: @road_halo;
   text-spacing: 300;
@@ -399,7 +399,7 @@
     [zoom >= 16] {
       text-name: "[name]";
       text-fill: #fff;
-      text-size: 9;
+      text-size: @standard-font-size + 9;
       text-halo-radius: @standard-halo-radius;
       text-halo-fill: @road_halo;
       text-spacing: 300;
@@ -411,7 +411,7 @@
       text-repeat-distance: @major-highway-text-repeat-distance;
     }
     [zoom >= 17] {
-      text-size: 11;
+      text-size: @standard-font-size + 1;
       text-dy: 9;
     }
   }
@@ -424,7 +424,7 @@
     [zoom >= 16] {
       text-name: "[name]";
       text-fill: #fff;
-      text-size: 9;
+      text-size: @standard-font-size + 9;
       text-halo-radius: @standard-halo-radius;
       text-halo-fill: @road_halo;
       text-spacing: 300;
@@ -436,7 +436,7 @@
       text-repeat-distance: @major-highway-text-repeat-distance;
     }
     [zoom >= 17] {
-      text-size: 11;
+      text-size: @standard-font-size + 1;
       text-dy: 9;
     }
   }
@@ -537,7 +537,7 @@
       text-size: 1.1 * @standard-font-size;
       text-wrap-width: @standard-wrap-width;
       text-line-spacing: @standard-line-spacing-size;
-      text-fill: @trainstation-text;
+      text-fill: #fff;
       text-dy: 10;
       text-face-name: @sans_bold;
       text-halo-radius: @standard-halo-radius;
@@ -618,7 +618,7 @@
 #bicycle_routes_labels[type='ncn'][zoom >= 16],
 #bicycle_routes_labels[type='rcn'][zoom >= 16],
 #bicycle_routes_labels[type='lcn'][zoom >= 16] {
-  text-size: 9;
+  text-size: @standard-font-size + 9;
   text-halo-radius: @standard-halo-radius;
   text-halo-fill: @road_halo;
   text-spacing: 900;
