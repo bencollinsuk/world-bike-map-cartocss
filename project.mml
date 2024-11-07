@@ -1,5 +1,5 @@
-name: CyclOSM
-description: 'Cycle oriented CartoCSS style.'
+name: World Bike Map
+description: 'World Bike Map CartoCSS style.'
 attribution: Data © OpenStreetMap (and) contributors, ODbL
 bounds: &world
   - -180
