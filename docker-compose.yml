@@ -7,6 +7,11 @@ services:
       dockerfile: Dockerfile
     volumes:
       - .:/cyclosm
+    deploy:
+      resources:
+        reservations:
+          cpus: '10'
+          memory: 16G
     depends_on:
       - db
     ports:
