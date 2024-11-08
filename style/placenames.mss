@@ -276,7 +276,7 @@
 
 #placenames-medium::low-importance {
   [category = 2] {
-    [zoom >= 9][zoom < 16] {
+    [zoom >= 10][zoom < 16] {
       text-name: "[name]";
       text-size: @standard-font-size;
       text-fill: @placenames;
@@ -332,7 +332,7 @@
     text-dx: 25;
     text-dy: 20;
     [zoom >= 16] {
-      text-size: @standard-font-size + 4;
+      text-size: @standard-font-size + 6;
       text-wrap-width: 75; // 5.0 em
       text-line-spacing: -0.75; // -0.05 em
       text-margin: 10.5; // 0.7 em
