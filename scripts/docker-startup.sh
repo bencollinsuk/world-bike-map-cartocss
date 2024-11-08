@@ -53,6 +53,9 @@ EOF
   --drop \
   $OSM2PGSQL_DATAFILE
 
+    echo "INFO: Importing data done. Creating indexes..."
+    psql -d $DB_NAME -f /indexes.sql
+
   # Run cyclosm-specific sql script
   psql --dbname=$DB_NAME --file=views.sql
 
