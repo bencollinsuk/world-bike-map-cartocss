@@ -39,21 +39,21 @@ _parts:
     extent: "-20037508,-20037508,20037508,20037508"
 
 Stylesheet:
-- style-dark/palette.mss
-- style-dark/road-colors.mss
-- style-dark/fonts.mss
-- style-dark/base.mss
-- style-dark/aerialways.mss
-- style-dark/ferry-routes.mss
-- style-dark/roads.mss
-- style-dark/amenities.mss
-- style-dark/labels.mss
-- style-dark/placenames.mss
-- style-dark/addressing.mss
-- style-dark/power.mss
-- style-dark/admin.mss
-- style-dark/gpx.mss
-- style-dark/legend.mss
+- style-${THEME}/palette.mss
+- style-${THEME}/road-colors.mss
+- style-${THEME}/fonts.mss
+- style-${THEME}/base.mss
+- style-${THEME}/aerialways.mss
+- style-${THEME}/ferry-routes.mss
+- style-${THEME}/roads.mss
+- style-${THEME}/amenities.mss
+- style-${THEME}/labels.mss
+- style-${THEME}/placenames.mss
+- style-${THEME}/addressing.mss
+- style-${THEME}/power.mss
+- style-${THEME}/admin.mss
+- style-${THEME}/gpx.mss
+- style-${THEME}/legend.mss
 
 Layer:
 - id: land-low

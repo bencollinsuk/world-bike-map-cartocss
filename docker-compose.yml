@@ -18,6 +18,7 @@ services:
     environment:
       - PGHOST=db
       - PGUSER=postgres
+      - THEME=${THEME}
   db:
     image: world-bike-map-tile-server-db
     build:
@@ -60,6 +61,7 @@ services:
       - CACHE=8000
       - THREADS=10
       - OSM2PGSQL_DATAFILE
+      - THEME=${THEME}
 
 volumes:
   osm-data:
