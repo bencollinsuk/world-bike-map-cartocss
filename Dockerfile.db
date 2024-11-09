@@ -1,4 +1,4 @@
 FROM mdillon/postgis
 
 ADD ./scripts/tune-postgis.sh /docker-entrypoint-initdb.d
-COPY indexes.sql /
+COPY ./indexes.sql /

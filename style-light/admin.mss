@@ -264,7 +264,7 @@ overlapping borders correctly.
 #protected-areas-text[zoom >= 13][way_pixels > 192000] {
   text-name: "[name]";
   text-face-name: @standard-font;
-  text-fill: #fff;
+  text-fill: darken(@wooded,50%);
   text-halo-radius: @standard-halo-radius;
   text-halo-fill: @standard-halo-fill;
   text-largest-bbox-only: false;

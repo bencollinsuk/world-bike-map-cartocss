@@ -1411,7 +1411,7 @@
     text-halo-fill: @standard-halo-fill;
     text-line-spacing: @standard-line-spacing-size;
     text-face-name: @standard-font;
-    text-fill: #fff;
+    text-fill: @health-color;
     text-placement-type: simple;
     text-placements: "S,N,E,W,NE,SE,NW,SW,16,14,12";
     text-dy: 12;
@@ -1423,7 +1423,7 @@
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
-    text-fill: #fff;
+    text-fill: #000033;
     text-dy: 12;
     text-face-name: @standard-font;
     text-halo-radius: @standard-halo-radius;
@@ -1450,7 +1450,7 @@
 		text-size: @standard-font-size;
 		text-wrap-width: @standard-wrap-width;
 		text-line-spacing: @standard-line-spacing-size;
-		text-fill: #fff;
+		text-fill: @culture;
 		text-dy: 11;
 		text-face-name: @standard-font;
 		text-halo-radius: @standard-halo-radius;
@@ -1501,7 +1501,7 @@
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
-    text-fill: #fff;
+    text-fill: @amenity-common;
     [feature = 'natural_volcano'] { text-fill: #b10000; }
     text-dy: 7;
     [feature = 'tourism_viewpoint'] { text-dy: 12; }
@@ -1549,7 +1549,7 @@
     }
     text-face-name: @sans_italic;
     text-halo-radius: @standard-halo-radius;
-    text-halo-fill: #fff;
+    text-halo-fill: @place_halo;
   }
 }
 

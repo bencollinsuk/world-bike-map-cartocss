@@ -34,9 +34,9 @@ services:
     environment:
       - PG_WORK_MEM
       - PG_MAINTENANCE_WORK_MEM
-      - THREADS=4
+      - THREADS=8
       - OSM2PGSQL_EXTRA_ARGS=-C 8192
-      - PGPASSWORD=renderer
+      - PGPASSWORD=postgres
     volumes:
       - osm-data:/var/lib/postgresql/data
   import:

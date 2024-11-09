@@ -54,7 +54,7 @@ EOF
   $OSM2PGSQL_DATAFILE
 
     echo "INFO: Importing data done. Creating indexes..."
-    psql -d $DB_NAME -f /indexes.sql
+    psql -d $DB_NAME -f indexes.sql || exit 1
 
   # Run cyclosm-specific sql script
   psql --dbname=$DB_NAME --file=views.sql
@@ -72,7 +72,7 @@ kosmtik)
   export KOSMTIK_CONFIGPATH=".kosmtik-config.yml"
 
   cat project.mml.template | sed -e "s/\${THEME}/$THEME/g" > project.mml
-
+  cat project.mml
   # Starting Kosmtik
   kosmtik serve project.mml --host 0.0.0.0
   # It needs Ctrl+C to be interrupted
