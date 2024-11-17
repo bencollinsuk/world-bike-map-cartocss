@@ -10,7 +10,7 @@
  *         inner fill (inline).
  */
 
-@cycle-fill: #0000ce;
+@cycle-fill: #fe7f00;
 @cycle_lane_case:   @cycle-fill;
 @cycle_track_case:  @cycle-fill;
 @cycle_busway_case: @cycle-fill;
@@ -20,21 +20,21 @@
 @footway-tunnel-fill: #dcc3a6;
 @footway_area_fill: #f3e5d0;
 @bridleway-fill: #741e18;
-@icn-overlay: #ff00ff;
+@icn-overlay: #bd2924;
 @icn-shield-fill: #f6f6f6;
-@lcn-overlay: #0000ff;
-@lcn-shield-fill: #f6f6f6;
+@lcn-overlay: #fe7f00;
+@lcn-shield-fill: #000000;
 @motorway-trunk-case: #f6f6f6;
 @motorway-trunk-cycle-fill: #f4c3c3;
 @motorway-trunk-fill: #d4d4d4;
 @mtb-overlay: #d15000;
 @mtb-shield-fill: #f6f6f6;
-@ncn-overlay: #aa00ff;
-@ncn-shield-fill: #f6f6f6;
+@ncn-overlay: #fe7f00;
+@ncn-shield-fill: #000000;
 @primary-case: #d8b267;
 @primary-fill: #f4dfc3;
 @rail-line: #888888;
-@rcn-overlay: #5500ff;
+@rcn-overlay: #fe7f00;
 @rcn-shield-fill: #f6f6f6;
 @secondary-case: #b1bb5d;
 @secondary-fill: #f6f8d2;

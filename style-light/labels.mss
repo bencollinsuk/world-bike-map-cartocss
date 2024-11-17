@@ -138,13 +138,11 @@
 /* ================================================================== */
 
 #roads-text-ref-low-zoom[zoom < 13] {
-  [highway = 'motorway'][zoom >= 10],
-  [highway = 'trunk'][zoom >= 10],
   [highway = 'primary'][zoom >= 11],
   [highway = 'secondary'][zoom >= 12] {
     text-name: "[refs]";
-    text-size: @standard-font-size + 7;
-    text-fill: @road_text;
+    text-size: @standard-font-size - 5;
+    text-fill: #ccc;
     text-spacing: 600;
     text-clip: false;
     text-placement: line;

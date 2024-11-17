@@ -2,23 +2,23 @@
 # Colours used by the road shields script
 shield:
   icn:
-    fill: '#f5fe00'
-    stroke_fill: '#f5fe00'
+    fill: '#bd2924'
+    stroke_fill: '#bd2924'
     additional_sizes:
     - base
   ncn:
-    fill: '#f5fe00'
-    stroke_fill: '#f5fe00'
+    fill: '#fe7f00'
+    stroke_fill: '#fe7f00'
     additional_sizes:
     - base
   rcn:
-    fill: '#f5fe00'
-    stroke_fill: '#f5fe00'
+    fill: '#fe7f00'
+    stroke_fill: '#fe7f00'
     additional_sizes:
     - base
   lcn:
-    fill: '#f5fe00'
-    stroke_fill: '#f5fe00'
+    fill: '#ff8f1d'
+    stroke_fill: '#ff8f1d'
     additional_sizes:
     - base
   mtb:
@@ -27,8 +27,8 @@ shield:
     additional_sizes:
     - base
   icn-junction:
-    fill: '#f5fe00'
-    stroke_fill: '#f5fe00'
+    fill: '#bd2924'
+    stroke_fill: '#bd2924'
     rounded_corners: 500
     max_height: 1
     max_width: 1
@@ -41,8 +41,8 @@ shield:
       shield_width: 24
       shield_height: 24
   ncn-junction:
-    fill: '#f5fe00'
-    stroke_fill: '#f5fe00'
+    fill: '#fe7f00'
+    stroke_fill: '#fe7f00'
     rounded_corners: 500
     max_height: 1
     max_width: 1
@@ -55,8 +55,8 @@ shield:
       shield_width: 24
       shield_height: 24
   rcn-junction:
-    fill: '#f5fe00'
-    stroke_fill: '#f5fe00'
+    fill: '#fe7f00'
+    stroke_fill: '#fe7f00'
     rounded_corners: 500
     max_height: 1
     max_width: 1
@@ -69,8 +69,8 @@ shield:
       shield_width: 24
       shield_height: 24
   lcn-junction:
-    fill: '#f5fe00'
-    stroke_fill: '#f5fe00'
+    fill: '#ff8f1d'
+    stroke_fill: '#ff8f1d'
     rounded_corners: 500
     max_height: 1
     max_width: 1

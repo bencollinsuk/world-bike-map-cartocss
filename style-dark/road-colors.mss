@@ -10,7 +10,7 @@
  *         inner fill (inline).
  */
 
-@cycle-fill: #f5fe00;
+@cycle-fill: #fe7f00;
 @cycle_lane_case:   @cycle-fill;
 @cycle_track_case:  @cycle-fill;
 @cycle_busway_case: @cycle-fill;
@@ -22,7 +22,7 @@
 @bridleway-fill: #741e18;
 @icn-overlay: #bd2924;
 @icn-shield-fill: #ffffff;
-@lcn-overlay: #f5fe00;
+@lcn-overlay: #ff8f1d;
 @lcn-shield-fill: #000000;
 @motorway-trunk-case: #666;
 @motorway-trunk-cycle-fill: #787878;
@@ -34,7 +34,7 @@
 @primary-case: #666;
 @primary-fill: #787878;
 @rail-line: #fff;
-@rcn-overlay: #f5fe00;
+@rcn-overlay: #fe7f00;
 @rcn-shield-fill: #000000;
 @secondary-case: #666;
 @secondary-fill: #666666;
