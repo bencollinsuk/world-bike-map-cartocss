@@ -158,7 +158,7 @@
 
 @natural_volcano: #980000;
 
-@bicycle-amenity: #ac39ac;
+@bicycle-amenity: #980000;
 @bicycle-rental: #006ac3;
 @marina-text: #fff;
 @nobike-transportation-icon: #444444;

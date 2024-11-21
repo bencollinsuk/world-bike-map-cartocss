@@ -42,8 +42,8 @@
       text-halo-fill: #000;
     }
     [type='golf_course'] {
-      text-fill: @grass * 0.6;
-      text-halo-fill: lighten(@grass, 10%);
+      text-fill: #fff;
+      text-halo-fill: #000;
     }
     [type='cemetery'] {
       text-fill: @cemetery * 0.6;

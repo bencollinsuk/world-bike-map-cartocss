@@ -707,7 +707,7 @@
   }
 
   [feature = 'shop_bicycle'][zoom >= 14] {
-    [zoom <=15] { marker-transform: "scale(0.83)"; }
+    [zoom <=15] { marker-transform: "scale(1.25)"; }
     marker-file: url('symbols/osm-bright-gl-style/amenities/bicycle_11.svg');
     marker-placement: interior;
     marker-clip: false;
@@ -1249,7 +1249,7 @@
       }
       text-face-name: @standard-font;
       text-halo-radius: @standard-halo-radius;
-      text-halo-fill: rgba(255, 255, 255, 0.6);
+      text-halo-fill: rgba(0, 0, 0, 1);
       text-placement: interior;
       text-placement-type: simple;
       text-placements: "S,N,E,W,NE,SE,NW,SW";
@@ -1260,6 +1260,22 @@
       }
     }
   }
+
+  [feature = 'shop_bicycle'] {
+    [zoom >= 14] {
+      text-name: "[name]";
+      text-size: @standard-font-size;
+      text-wrap-width: @standard-wrap-width;
+      text-line-spacing: @standard-line-spacing-size;
+      text-dy: 12;
+      text-fill: #fff;
+      text-face-name: @standard-font;
+      text-halo-radius: @standard-halo-radius;
+      text-halo-fill: @standard-halo-fill;
+      text-placement: interior;
+    }
+  }
+
 
   [feature = 'shop_bicycle'],
   [feature = 'shop_sports'],
@@ -1278,9 +1294,22 @@
       text-fill: @shop-text;
       text-face-name: @standard-font;
       text-halo-radius: @standard-halo-radius;
-      text-halo-fill: rgba(255, 255, 255, 0.6);
+      text-halo-fill: rgba(255, 255, 255, 1);
       text-placement: interior;
-      [feature = 'shop_bicycle'] { text-fill: @bicycle-amenity; }
+    }
+  }
+
+  [feature = 'shop_bicycle'] {
+    [zoom >= 18] {
+      text-size: @standard-font-size + 4;
+      text-wrap-width: @standard-wrap-width;
+      text-line-spacing: @standard-line-spacing-size;
+      text-dy: 12;
+      text-halo-radius: @standard-halo-radius;
+      [feature = 'shop_bicycle'] {
+        marker-transform: "scale(1.25)"; 
+        text-fill: #bd2924;
+      }
     }
   }
 
@@ -1293,7 +1322,7 @@
     text-fill: @shop-text;
     text-face-name: @standard-font;
     text-halo-radius: @standard-halo-radius;
-    text-halo-fill: rgba(255, 255, 255, 0.6);
+    text-halo-fill: rgba(255, 255, 255, 1);
     text-placement: interior;
   }
 
@@ -1306,7 +1335,7 @@
     text-fill: @marina-text;
     text-face-name: @standard-font;
     text-halo-radius: @standard-halo-radius;
-    text-halo-fill: rgba(255, 255, 255, 0.6);
+    text-halo-fill: rgba(255, 255, 255, 1);
     text-placement: interior;
   }
 
@@ -1319,7 +1348,7 @@
     text-fill: @shop-text;
     text-face-name: @standard-font;
     text-halo-radius: @standard-halo-radius;
-    text-halo-fill: rgba(255, 255, 255, 0.6);
+    text-halo-fill: rgba(255, 255, 255, 1);
     text-placement: interior;
   }
 
