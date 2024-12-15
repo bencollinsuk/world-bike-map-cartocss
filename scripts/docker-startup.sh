@@ -74,7 +74,7 @@ kosmtik)
   cat project.mml.template | sed -e "s/\${THEME}/$THEME/g" > project-$THEME.mml
 
   # Starting Kosmtik
-  kosmtik serve project-$THEME.mml --host 0.0.0.0
+  kosmtik serve project-$THEME.mml --host 0.0.0.0 --port $PORT --style-id $THEME
   # It needs Ctrl+C to be interrupted
   ;;
 
