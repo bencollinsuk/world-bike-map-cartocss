@@ -3875,16 +3875,6 @@
 // BICYCLE ROUTES
 // ==================================================================
 
-#bicycle_routes_gen0[zoom >= 2] {
-  opacity: 0.75;
-
-  line-color: @icn-overlay;
-  [route='mtb'] {
-    line-color: @mtb-overlay;
-  }
-
-  line-width: 2;
-}
 #bicycle_routes_gen1[zoom >= 5] {
   opacity: 0.75;
   line-color: @icn-overlay;

@@ -1,5 +1,5 @@
 services:
-  kosmtik:
+  light:
     image: kosmtik:v1
     build:
       context: .
@@ -18,7 +18,27 @@ services:
     environment:
       - PGHOST=db
       - PGUSER=postgres
-      - THEME=${THEME}
+      - THEME=light
+  dark:
+    image: kosmtik:v1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/cyclosm
+    deploy:
+      resources:
+        reservations:
+          cpus: '10'
+          memory: 16G
+    depends_on:
+      - db
+    ports:
+      - "127.0.0.1:6790:6789"
+    environment:
+      - PGHOST=db
+      - PGUSER=postgres
+      - THEME=dark
   db:
     image: world-bike-map-tile-server-db
     shm_size: 2gb

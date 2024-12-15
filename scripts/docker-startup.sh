@@ -71,10 +71,10 @@ kosmtik)
   fi
   export KOSMTIK_CONFIGPATH=".kosmtik-config.yml"
 
-  cat project.mml.template | sed -e "s/\${THEME}/$THEME/g" > project.mml
+  cat project.mml.template | sed -e "s/\${THEME}/$THEME/g" > project-$THEME.mml
 
   # Starting Kosmtik
-  kosmtik serve project.mml --host 0.0.0.0
+  kosmtik serve project-$THEME.mml --host 0.0.0.0
   # It needs Ctrl+C to be interrupted
   ;;
 
