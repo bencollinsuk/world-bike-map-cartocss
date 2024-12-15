@@ -3878,7 +3878,7 @@
 #bicycle_routes_gen1[zoom >= 5] {
   opacity: 0.75;
   line-color: @icn-overlay;
-  line-width: 4;
+  line-width: 1;
 
   [type='ncn'] {
     line-color: @ncn-overlay;
