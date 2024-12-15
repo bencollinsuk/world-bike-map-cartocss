@@ -19,6 +19,7 @@ services:
       - PGHOST=db
       - PGUSER=postgres
       - THEME=light
+      - PORT=6789
   dark:
     image: kosmtik:v1
     build:
@@ -34,11 +35,12 @@ services:
     depends_on:
       - db
     ports:
-      - "127.0.0.1:6790:6789"
+      - "127.0.0.1:6790:6790"
     environment:
       - PGHOST=db
       - PGUSER=postgres
       - THEME=dark
+      - PORT=6790
   db:
     image: world-bike-map-tile-server-db
     shm_size: 2gb
