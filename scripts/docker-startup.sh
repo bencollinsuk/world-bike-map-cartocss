@@ -27,7 +27,7 @@ import)
   if [ ! -e ".env" ]; then
     cat > .env <<EOF
 # Environment settings for importing to a Docker container database
-PG_WORK_MEM=${PG_WORK_MEM:-16MB}
+PG_WORK_MEM=${PG_WORK_MEM:-256MB}
 PG_MAINTENANCE_WORK_MEM=${PG_MAINTENANCE_WORK_MEM:-256MB}
 CACHE=${CACHE:-4096}
 THREADS=${THREADS:-8}
@@ -72,7 +72,7 @@ kosmtik)
   export KOSMTIK_CONFIGPATH=".kosmtik-config.yml"
 
   cat project.mml.template | sed -e "s/\${THEME}/$THEME/g" > project.mml
-  cat project.mml
+
   # Starting Kosmtik
   kosmtik serve project.mml --host 0.0.0.0
   # It needs Ctrl+C to be interrupted

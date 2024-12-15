@@ -21,6 +21,9 @@ services:
       - THEME=${THEME}
   db:
     image: world-bike-map-tile-server-db
+    shm_size: 2gb
+    cpus: "8"
+    mem_reservation: "6G"
     build:
       context: .
       dockerfile: Dockerfile.db
@@ -41,6 +44,9 @@ services:
       - osm-data:/var/lib/postgresql/data
   import:
     image: world-bike-map-tile-server-import
+    shm_size: 2gb
+    cpus: "8"
+    mem_reservation: "6G"
     build:
       context: .
       dockerfile: Dockerfile.import
