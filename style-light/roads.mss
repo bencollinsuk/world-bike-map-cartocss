@@ -3911,9 +3911,9 @@
   }
 
   [type='icn'] {
-    [zoom >= 8] { line-width: 3; }
-    [zoom >= 9] { line-width: 4; }
-    [zoom >= 10] { line-width: 4.5; }
+    [zoom >= 8] { line-width: 2; }
+    [zoom >= 9] { line-width: 2; }
+    [zoom >= 10] { line-width: 2; }
   }
 
   line-width: 1.5;
@@ -3939,7 +3939,7 @@
   }
 
   [type='icn'] {
-    [zoom >= 11] { line-width: 5; }
+    [zoom >= 11] { line-width: 3; }
   }
 
   line-width: 2.5;
@@ -3947,7 +3947,7 @@
     line-width: 3;
   }
   [zoom >= 14] {
-    line-width: 7;
+    line-width: 8;
   }
   [zoom >= 15] {
     line-width: 8;
