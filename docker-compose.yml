@@ -89,8 +89,6 @@ services:
       - CACHE=8000
       - THREADS=10
       - OSM2PGSQL_DATAFILE
-      - THEME=${THEME}
-
 volumes:
   osm-data:
     external: true
